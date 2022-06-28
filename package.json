@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cron": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "find-config": "^1.0.0",
+    "node-fetch": "^2.6.7",
+    "node-telegram-bot-api": "^0.57.0",
+    "request": "^2.88.2"
+  }
+}
