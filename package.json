@@ -1,10 +1,19 @@
 {
   "dependencies": {
     "cron": "^2.0.0",
+    "cronstrue": "^2.11.0",
     "dotenv": "^16.0.1",
     "find-config": "^1.0.0",
     "node-fetch": "^2.6.7",
     "node-telegram-bot-api": "^0.57.0",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "scripts": {
+    "eslint": "eslint src/"
   }
 }
