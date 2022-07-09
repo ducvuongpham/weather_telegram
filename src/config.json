@@ -1,0 +1,3 @@
+{
+    "weatherURL": "http://api.weatherapi.com/v1/forecast.json?days=2" 
+}
