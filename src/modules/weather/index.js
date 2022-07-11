@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../../.env' });
+require('dotenv').config({ path: '.env' });
 const request = require('request');
 const config = require('../../config.json');
 
