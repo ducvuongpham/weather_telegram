@@ -14,6 +14,7 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "scripts": {
-    "eslint": "eslint src/"
+    "eslint": "eslint src/",
+    "start": "node src/app.js"
   }
 }
