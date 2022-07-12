@@ -32,7 +32,12 @@ const getForecast = async (city, hours) => {
   ${'Humidity'}\n`;
   const now = new Date();
 
-  const response = await subscribe(city);
+  let response;
+  try {
+    response = await subscribe(city);
+  } catch {
+    return 'The requested city could not be found! Please check again';
+  }
   const forecastList = response.forecast.forecastday[0].hour.concat(
     response.forecast.forecastday[1].hour,
   ); // merge 2 day forecast
@@ -48,7 +53,12 @@ const getWeather = async (city) => {
   ${'Temp'.padEnd(6)}\
   ${'Humidity'}\n`;
 
-  const response = await subscribe(city);
+  let response;
+  try {
+    response = await subscribe(city);
+  } catch {
+    return 'The requested city could not be found! Please check again';
+  }
   const weather = response.current;
   weather.time = weather.last_updated;
 
